@@ -5,7 +5,7 @@ Content Addressable aRchive format reader and writer.
 ## Install
 
 ```sh
-pip install ipld_car
+pip install ipld-car
 ```
 
 ## Usage
