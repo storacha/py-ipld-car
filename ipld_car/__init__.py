@@ -1,4 +1,5 @@
 import dag_cbor
+from dag_cbor import IPLDKind
 from multiformats import CID, varint
 from typing import Final, Tuple, Union
 
@@ -18,7 +19,7 @@ def encode(roots: list[CID], blocks: list[Block]) -> memoryview:
     """
     buffer = bytearray()
 
-    header_bytes = dag_cbor.encode({"version": 1, "roots": roots})
+    header_bytes = dag_cbor.encode({"version": 1, "roots": list[IPLDKind](roots)})
     header_len = varint.encode(len(header_bytes))
     buffer += header_len
     buffer += header_bytes
