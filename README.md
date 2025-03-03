@@ -1,4 +1,4 @@
-# py-ipld-car
+# ipld-car
 
 Content Addressable aRchive format reader and writer.
 
