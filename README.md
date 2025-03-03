@@ -55,4 +55,4 @@ All welcome! storacha.network is open-source.
 
 ## License
 
-Dual-licensed under [MIT OR Apache 2.0](LICENSE.md)
+Dual-licensed under [Apache-2.0 OR MIT](LICENSE.md)
