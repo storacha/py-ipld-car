@@ -22,6 +22,10 @@ classifiers = [
 ]
 license = "Apache-2.0 OR MIT"
 license-files = ["LICENSE.md"]
+dependencies = [
+    "dag-cbor>=0.3.3",
+    "multiformats>=0.3.1.post4",
+]
 
 [project.urls]
 Homepage = "https://github.com/storacha/py-ipld-car"
