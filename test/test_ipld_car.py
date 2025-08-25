@@ -1,4 +1,6 @@
-import pytest
+# SPDX-FileCopyrightText: 2025 Contributers to py-ipld-car <https://github.com/storacha/py-ipld-car>
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 from multiformats import multihash, CID
 import ipld_car
 from ipld_car import Block

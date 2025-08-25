@@ -14,9 +14,18 @@ requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
 license = "Apache-2.0 OR MIT"
 license-files = ["LICENSE.md"]
+dependencies = [
+    "dag-cbor>=0.3.3",
+    "multiformats>=0.3.1.post4",
+]
 
 [project.urls]
 Homepage = "https://github.com/storacha/py-ipld-car"
