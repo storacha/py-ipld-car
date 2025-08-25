@@ -1,1 +1,10 @@
+# SPDX-FileCopyrightText: 2025 Contributers to py-ipld-car <https://github.com/storacha/py-ipld-car>
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+__pycache__
+.mypy_cache
+.pytest_cache
+*.egg-info
+*.py[cdoz]
+build
 dist
