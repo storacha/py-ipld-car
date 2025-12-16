@@ -2,6 +2,9 @@
 
 Content Addressable aRchive format reader and writer.
 
+> [!NOTE]  
+> This is not a streaming implementation. All blocks are loaded into memory. 
+
 ## Install
 
 ```sh
