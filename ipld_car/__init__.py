@@ -13,7 +13,7 @@ Block = Tuple[CID, BytesLike]
 """ Represents an IPLD block (including its CID). """
 
 
-def encode(roots: list[CID], blocks: list[Block]) -> memoryview:
+def encode(roots: list[CID | str], blocks: list[Block]) -> memoryview:
     """
     Encode a CAR v1 file from a list of root CIDs and blocks.
     """
@@ -26,8 +26,10 @@ def encode(roots: list[CID], blocks: list[Block]) -> memoryview:
 
     for b in blocks:
         cid = b[0]
-        if not isinstance(cid, CID):
-            raise TypeError("block CID is not an instance of CID")
+        if not (isinstance(cid, CID) or isinstance(cid, str)):
+            raise TypeError("block CID is not an instance of CID or string")
+        if isinstance(cid, str):
+            cid = CID.decode(cid)
         cid_bytes = bytes(cid)
 
         block_bytes = b[1]
